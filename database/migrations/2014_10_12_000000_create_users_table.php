@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->string('address')->nullable();
             $table->string('place_of_birth')->nullable();
             $table->date('date_of_birth')->nullable();
-            $table->string('profile_picture')->nullable();
+            $table->string('image')->nullable();
             $table->string('job')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

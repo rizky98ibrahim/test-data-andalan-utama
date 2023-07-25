@@ -25,7 +25,7 @@ class UserFactory extends Factory
             'address' => fake()->address(),
             'place_of_birth' => fake()->city(),
             'date_of_birth' => fake()->date(),
-            'profile_picture' => fake()->imageUrl(),
+            'image' => fake()->imageUrl(),
             'job' => fake()->jobTitle(),
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
