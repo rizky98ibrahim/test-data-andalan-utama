@@ -9,13 +9,16 @@ Proyek ini bertujuan untuk membuat sebuah web app sederhana yang memiliki bebera
 ## Fitur
 
 1. Halaman Login:
+
     - Pengguna dapat masuk ke dalam sistem dengan menggunakan akun yang sudah terdaftar.
     - Jika pengguna belum memiliki akun, mereka dapat mengakses halaman register.
 
 2. Halaman Register:
+
     - Pengguna dapat membuat akun baru dengan mengisi informasi yang diperlukan.
 
 3. Halaman Produk:
+
     - Pengguna yang telah login dapat mengakses halaman ini.
     - Halaman ini menampilkan seluruh data produk yang ada dengan menggunakan fungsi pagination untuk membatasi jumlah tampilan per halaman.
     - Terdapat fitur pencarian untuk memudahkan pengguna dalam mencari produk berdasarkan nama atau deskripsi.
@@ -24,6 +27,7 @@ Proyek ini bertujuan untuk membuat sebuah web app sederhana yang memiliki bebera
     - Terdapat fitur "delete" untuk menghapus produk dari database.
 
 4. Halaman Transaksi:
+
     - Pengguna yang telah login dapat mengakses halaman ini.
     - Halaman ini menampilkan seluruh data transaksi yang ada dengan menggunakan fungsi pagination untuk membatasi jumlah tampilan per halaman.
     - Terdapat fitur pencarian untuk memudahkan pengguna dalam mencari transaksi berdasarkan reference number atau informasi lainnya.
@@ -74,8 +78,8 @@ npm install
 
 5. Konfigurasi Database:
 
-   - Buat database baru di MySQL sesuai dengan nama yang diinginkan.
-   - Salin file `.env.example` menjadi `.env` dan sesuaikan konfigurasi database di dalamnya.
+    - Buat database baru di MySQL sesuai dengan nama yang diinginkan.
+    - Salin file `.env.example` menjadi `.env` dan sesuaikan konfigurasi database di dalamnya.
 
 6. Jalankan migrasi dan seed untuk mengisi tabel dengan data awal:
 
@@ -99,29 +103,27 @@ http://localhost:8000
 
 Berikut adalah beberapa fitur yang di perlukan untuk menyelesaikan proyek ini:
 
-- [x] Buat migrasi untuk tabel Users, Transactions, dan Products.
-- [x] Buat model untuk masing-masing tabel.
-- [ ] Buat controller untuk mengatur logika aplikasi di backend.
-- [ ] Implementasikan fungsi-fungsi seperti login, register, CRUD untuk produk dan transaksi di controller.
-- [ ] Buat API endpoint untuk menambahkan data transaksi berdasarkan ketentuan yang diberikan.
-- [ ] Buat halaman login, register, produk, dan transaksi di frontend dengan Vue.js.
-- [ ] Hubungkan frontend dengan backend menggunakan Axios untuk berkomunikasi dengan API.
-- [ ] Lakukan validasi input di frontend dan backend.
-- [ ] Implementasikan mekanisme otentikasi untuk melindungi halaman produk dan transaksi.
-- [ ] Tambahkan fitur pagination dan search untuk halaman produk dan transaksi.
-- [ ] Buat halaman detail produk.
-- [ ] Tambahkan fitur upload gambar produk.
-- [ ] Tambahkan fitur notifikasi atau alert untuk memberi feedback kepada pengguna.
-- [ ] Lakukan pengujian dan testing untuk memastikan aplikasi berjalan dengan baik.
+-   [x] Buat migrasi untuk tabel Users, Transactions, dan Products.
+-   [x] Buat model untuk masing-masing tabel.
+-   [ ] Buat controller untuk mengatur logika aplikasi di backend.
+-   [ ] Implementasikan fungsi-fungsi seperti login, register, CRUD untuk produk dan transaksi di controller.
+-   [ ] Buat API endpoint untuk menambahkan data transaksi berdasarkan ketentuan yang diberikan.
+-   [ ] Buat halaman login, register, produk, dan transaksi di frontend dengan Vue.js.
+-   [ ] Hubungkan frontend dengan backend menggunakan Axios untuk berkomunikasi dengan API.
+-   [ ] Lakukan validasi input di frontend dan backend.
+-   [ ] Implementasikan mekanisme otentikasi untuk melindungi halaman produk dan transaksi.
+-   [ ] Tambahkan fitur pagination dan search untuk halaman produk dan transaksi.
+-   [ ] Buat halaman detail produk.
+-   [ ] Tambahkan fitur upload gambar produk.
+-   [ ] Tambahkan fitur notifikasi atau alert untuk memberi feedback kepada pengguna.
+-   [ ] Lakukan pengujian dan testing untuk memastikan aplikasi berjalan dengan baik.
 
 ## Kontak
 
 Jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut, silakan hubungi saya melalui kontak berikut:
-
 
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6287808740020)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rizky98ibrahim@gmail.com)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/rizky98ibrahim)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rizky98ibrahim/)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/rizky98ibrahim)
-

@@ -190,7 +190,7 @@
             <p class="mb-5 text-sm font-medium text-center text-slate-500">
                 Sudah punya akun?
                 <router-link
-                    to="/register"
+                    to="/login"
                     class="font-medium text-green-600 hover:underline"
                     >Masuk di sini</router-link
                 >
