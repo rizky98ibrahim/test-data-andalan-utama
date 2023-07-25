@@ -99,8 +99,8 @@ http://localhost:8000
 
 Berikut adalah beberapa fitur yang di perlukan untuk menyelesaikan proyek ini:
 
-- [ ] Buat migrasi untuk tabel Users, Transactions, dan Products.
-- [ ] Buat model untuk masing-masing tabel.
+- [x] Buat migrasi untuk tabel Users, Transactions, dan Products.
+- [x] Buat model untuk masing-masing tabel.
 - [ ] Buat controller untuk mengatur logika aplikasi di backend.
 - [ ] Implementasikan fungsi-fungsi seperti login, register, CRUD untuk produk dan transaksi di controller.
 - [ ] Buat API endpoint untuk menambahkan data transaksi berdasarkan ketentuan yang diberikan.
