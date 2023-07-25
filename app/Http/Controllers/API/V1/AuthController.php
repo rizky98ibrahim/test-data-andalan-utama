@@ -62,7 +62,6 @@ class AuthController extends Controller
                     'user' => $user
                 ]
             ], 200);
-
         } catch (\Throwable $th) {
             return response()->json([
                 'success' => false,
@@ -133,7 +132,9 @@ class AuthController extends Controller
                 'phone_number' => $phone_number,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
-                'image' => $imagePath
+                'image' => $imagePath,
+                'email_verified_at' => now(),
+                'remember_token' => Str::random(10),
             ]);
 
 
@@ -170,7 +171,6 @@ class AuthController extends Controller
                 'success' => true,
                 'message' => 'Successfully logged out'
             ], 200);
-
         } catch (\Throwable $th) {
             return response()->json([
                 'success' => false,

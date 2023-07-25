@@ -80,6 +80,46 @@ export const useAuthStore = defineStore("auth", {
             }
         },
 
+        async register(userData) {
+            try {
+                // Call the register endpoint on the server
+                const response = await api.post("/register", userData);
+
+                // Get the success message from the response or set a generic message
+                const successMessage =
+                    response.data?.message || "Registration successful.";
+                this.setSuccess(successMessage);
+
+                // Get Token and User from the response
+                const { token, user } = response.data.data;
+                // Set the token and user data to the state using existing actions
+                this.setToken(token);
+                this.setUser(user);
+                // Clear the error message from the state
+                this.setErrors("");
+                // Return true to indicate successful registration
+                return true;
+            } catch (error) {
+                // Check if the error is from the server
+                if (
+                    error.response &&
+                    error.response.data &&
+                    error.response.data.message
+                ) {
+                    // Get the error message from the response
+                    const { message } = error.response.data;
+                    this.setErrors(message);
+                } else {
+                    // If the error doesn't have the expected structure, set a generic error message
+                    this.setErrors("An error occurred during registration.");
+                }
+                // Console log the error
+                console.log("Message: ", error.response?.data?.message);
+                // Return false to indicate failed registration
+                return false;
+            }
+        },
+
         async fetchUserData() {
             try {
                 // Call the user endpoint on the server to get the user data
