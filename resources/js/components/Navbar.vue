@@ -83,31 +83,31 @@
                             >
                                 <ul class="py-1">
                                     <li>
-                                        <a
-                                            href="inbox.html"
+                                        <router-link
+                                            to="/product"
                                             class="nav-link dark:hover:bg-slate-800/70"
-                                            >Tampil Produk</a
+                                            >Tampil Produk</router-link
                                         >
                                     </li>
                                     <li>
-                                        <a
-                                            href="email-read.html"
+                                        <router-link
+                                            to="/product"
                                             class="nav-link dark:hover:bg-slate-800/70"
-                                            >Tambah Produk</a
+                                            >Tambah Produk</router-link
                                         >
                                     </li>
                                     <li>
-                                        <a
-                                            href="chat.html"
+                                        <router-link
+                                            to="/product"
                                             class="nav-link dark:hover:bg-slate-800/70"
-                                            >Ubah Produk</a
+                                            >Ubah Produk</router-link
                                         >
                                     </li>
                                     <li>
-                                        <a
-                                            href="contact-list.html"
+                                        <router-link
+                                            to="/product"
                                             class="nav-link dark:hover:bg-slate-800/70"
-                                            >Hapus Produk</a
+                                            >Hapus Produk</router-link
                                         >
                                     </li>
                                 </ul>
@@ -134,10 +134,10 @@
                             >
                                 <ul class="py-1">
                                     <li>
-                                        <a
-                                            href="inbox.html"
+                                        <router-link
+                                            to="/ransaction"
                                             class="nav-link dark:hover:bg-slate-800/70"
-                                            >Tampil Transaction</a
+                                            >Tampil Transaction</router-link
                                         >
                                     </li>
                                     <li>
