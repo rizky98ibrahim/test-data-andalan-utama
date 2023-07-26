@@ -135,30 +135,30 @@
                                 <ul class="py-1">
                                     <li>
                                         <router-link
-                                            to="/ransaction"
+                                            to="/transaction"
                                             class="nav-link dark:hover:bg-slate-800/70"
                                             >Tampil Transaction</router-link
                                         >
                                     </li>
                                     <li>
-                                        <a
-                                            href="email-read.html"
+                                        <router-link
+                                            to="/transaction"
                                             class="nav-link dark:hover:bg-slate-800/70"
-                                            >Tambah Transaction</a
+                                            >Tambah Transaction</router-link
                                         >
                                     </li>
                                     <li>
-                                        <a
-                                            href="chat.html"
+                                        <router-link
+                                            to="/transaction"
                                             class="nav-link dark:hover:bg-slate-800/70"
-                                            >Ubah Transaction</a
+                                            >Ubah rransaction</router-link
                                         >
                                     </li>
                                     <li>
-                                        <a
-                                            href="contact-list.html"
+                                        <router-link
+                                            to="/transaction"
                                             class="nav-link dark:hover:bg-slate-800/70"
-                                            >Hapus Transaction</a
+                                            >Hapus Transactirn</router-link
                                         >
                                     </li>
                                 </ul>
