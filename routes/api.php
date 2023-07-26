@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\V1\AuthController;
 use App\Http\Controllers\API\V1\ProfileController;
 use App\Http\Controllers\API\V1\ProductController;
+use App\Http\Controllers\API\V1\TransactionController;
 
 // ! Version 1 API
 Route::prefix('v1')->group(function () {
@@ -25,6 +26,13 @@ Route::prefix('v1')->group(function () {
         Route::post('products', [ProductController::class, 'store']);
         Route::put('products/{product}', [ProductController::class, 'update']);
         Route::delete('products/{product}', [ProductController::class, 'destroy']);
+
+        // * Transactions
+        Route::get('transactions', [TransactionController::class, 'index']);
+        Route::post('transactions', [TransactionController::class, 'store']);
+        Route::get('transactions/{transaction}', [TransactionController::class, 'show']);
+        Route::put('transactions/{transaction}', [TransactionController::class, 'update']);
+        Route::delete('transactions/{transaction}', [TransactionController::class, 'destroy']);
     });
 });
 

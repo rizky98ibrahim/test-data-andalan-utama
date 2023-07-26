@@ -105,13 +105,13 @@ Berikut adalah beberapa fitur yang di perlukan untuk menyelesaikan proyek ini:
 
 -   [x] Buat migrasi untuk tabel Users, Transactions, dan Products.
 -   [x] Buat model untuk masing-masing tabel.
--   [ ] Buat controller untuk mengatur logika aplikasi di backend.
+-   [x] Buat controller untuk mengatur logika aplikasi di backend.
 -   [ ] Implementasikan fungsi-fungsi seperti login, register, CRUD untuk produk dan transaksi di controller.
--   [ ] Buat API endpoint untuk menambahkan data transaksi berdasarkan ketentuan yang diberikan.
+-   [x] Buat API endpoint untuk menambahkan data transaksi berdasarkan ketentuan yang diberikan.
 -   [ ] Buat halaman login, register, produk, dan transaksi di frontend dengan Vue.js.
--   [ ] Hubungkan frontend dengan backend menggunakan Axios untuk berkomunikasi dengan API.
--   [ ] Lakukan validasi input di frontend dan backend.
--   [ ] Implementasikan mekanisme otentikasi untuk melindungi halaman produk dan transaksi.
+-   [x] Hubungkan frontend dengan backend menggunakan Axios untuk berkomunikasi dengan API.
+-   [x] Lakukan validasi input di frontend dan backend.
+-   [x] Implementasikan mekanisme otentikasi untuk melindungi halaman produk dan transaksi.
 -   [ ] Tambahkan fitur pagination dan search untuk halaman produk dan transaksi.
 -   [ ] Buat halaman detail produk.
 -   [ ] Tambahkan fitur upload gambar produk.
