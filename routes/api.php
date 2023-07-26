@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\V1\AuthController;
 use App\Http\Controllers\API\V1\ProfileController;
+use App\Http\Controllers\API\V1\ProductController;
 
 // ! Version 1 API
 Route::prefix('v1')->group(function () {
@@ -17,9 +18,14 @@ Route::prefix('v1')->group(function () {
         Route::get('/profile', [ProfileController::class, 'index']);
         Route::post('/profile', [ProfileController::class, 'update']);
         Route::post('/logout', [AuthController::class, 'logout']);
-    });
 
-    // TODO: Make Route for Product & Transaction
+        // * Products
+        Route::get('products', [ProductController::class, 'index']);
+        Route::get('products/{product}', [ProductController::class, 'show']);
+        Route::post('products', [ProductController::class, 'store']);
+        Route::put('products/{product}', [ProductController::class, 'update']);
+        Route::delete('products/{product}', [ProductController::class, 'destroy']);
+    });
 });
 
 // ! Version 2 API (if needed)

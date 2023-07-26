@@ -5,47 +5,41 @@
         <div
             class="w-full m-auto bg-white dark:bg-slate-800/60 rounded shadow-lg ring-2 ring-slate-300/50 dark:ring-slate-700/50 lg:max-w-md"
         >
-            <div
-                class="text-center p-6 bg-gradient-to-r from-green-500 to-green-700 rounded-t"
-            >
-                <router-link to="/"
+            <div class="text-center p-6 bg-slate-900 rounded-t">
+                <a href="index.html"
                     ><img
-                        src="@images/new-logo.png"
+                        src="@images/logo-sm.png"
                         alt=""
                         class="w-14 h-14 mx-auto mb-2"
-                /></router-link>
-                <h3 class="font-semibold text-gray-900 text-xl mb-1">
+                /></a>
+                <h3 class="font-semibold text-white text-xl mb-1">
                     Pendaftaran
                 </h3>
-                <p class="text-sm text-gray-700">
-                    Mohon isi data berikut dengan benar.
+                <p class="text-xs text-slate-400">
+                    Mohon isi data diri anda dengan benar.
                 </p>
             </div>
 
             <form class="p-6" @submit.prevent="handleRegister">
-                <!-- ! BEGIN: Full Name -->
+                <!-- ! BEGIN: Nama Lengkap -->
                 <div>
-                    <label
-                        for="name"
-                        class="block text-sm font-medium text-gray-700"
+                    <label for="name" class="label"
                         >Nama Lengkap <span class="text-red-500">*</span></label
                     >
-                    <div>
-                        <input
-                            id="name"
-                            v-model="name"
-                            type="text"
-                            placeholder="Masukkan Nama Lengkap"
-                            class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm mt-1"
-                            required
-                            autofocus
-                        />
-                    </div>
+                    <input
+                        type="text"
+                        id="name"
+                        v-model="name"
+                        class="form-control dark:bg-slate-800/60 dark:border-slate-700/50"
+                        placeholder="Masukan Nama Lengkap"
+                        required
+                        autofocus
+                    />
                 </div>
                 <!-- ! END: Full Name -->
 
                 <!-- ! BEGIN: Username -->
-                <div class="mt-2">
+                <div class="mt-4">
                     <label
                         for="username"
                         class="block text-sm font-medium text-gray-700"
@@ -65,7 +59,7 @@
                 <!-- ! END: Username -->
 
                 <!-- ! BEGIN: Email -->
-                <div class="mt-2">
+                <div class="mt-4">
                     <label
                         for="email"
                         class="block text-sm font-medium text-gray-700"
@@ -86,11 +80,12 @@
                 <!-- ! END: Email -->
 
                 <!-- ! BEGIN: Nomor Telepon -->
-                <div class="mt-2">
+                <div class="mt-4">
                     <label
                         for="phone_number"
                         class="block text-sm font-medium text-gray-700"
-                        >Nomor Telepon <span>(Opsional)</span></label
+                        >Nomor Telepon
+                        <span class="text-red-500">*</span></label
                     >
 
                     <div>
@@ -106,7 +101,7 @@
                 <!-- ! END: Nomor Telepon -->
 
                 <!-- ! BEGIN: Password -->
-                <div class="mt-2">
+                <div class="mt-4">
                     <label
                         for="password"
                         class="block text-sm font-medium text-gray-700"
@@ -127,7 +122,7 @@
                 <!-- ! END: Password -->
 
                 <!-- ! BEGIN: Confirm Password -->
-                <div class="mt-2">
+                <div class="mt-4">
                     <label
                         for="password_confirmation"
                         class="block text-sm font-medium text-gray-700"
@@ -150,16 +145,11 @@
 
                 <!-- ! BEGIN Checkbox -->
                 <div class="block mt-4">
-                    <label class="custom-label" for="terms_and_conditions">
+                    <label class="custom-label">
                         <div
                             class="bg-white border dark:bg-slate-700 dark:border-slate-600 border-slate-200 rounded w-4 h-4 inline-block leading-4 text-center -mb-[3px]"
                         >
-                            <input
-                                type="checkbox"
-                                id="terms_and_conditions"
-                                v-model="terms_and_conditions"
-                            />
-
+                            <input type="checkbox" class="hidden" />
                             <i
                                 class="fas fa-check hidden text-xs text-slate-700 dark:text-slate-300"
                             ></i>
@@ -168,33 +158,35 @@
                             Saya setuju dengan
                             <router-link
                                 to="/register"
-                                class="text-green-600 hover:underline"
+                                class="text-blue-600 hover:underline"
                                 >Syarat dan Ketentuan</router-link
                             >
                             yang berlaku.
                         </span>
                     </label>
                 </div>
-
                 <!-- ! END Checkbox -->
 
+                <!-- ! BEGIN: Button -->
                 <div class="mt-6">
                     <button
-                        type="submit"
-                        class="flex w-full justify-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                        class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
                     >
                         Register
                     </button>
                 </div>
+                <!-- ! END: Button -->
             </form>
+            <!-- ! BEGIN: Footer -->
             <p class="mb-5 text-sm font-medium text-center text-slate-500">
                 Sudah punya akun?
                 <router-link
                     to="/login"
-                    class="font-medium text-green-600 hover:underline"
+                    class="font-medium text-blue-600 hover:underline"
                     >Masuk di sini</router-link
                 >
             </p>
+            <!-- ! END: Footer -->
         </div>
     </div>
 </template>
@@ -212,7 +204,6 @@ export default {
             phone_number: "",
             password: "",
             password_confirmation: "",
-            terms_and_conditions: false,
             success: "",
             errors: "",
         };
@@ -233,7 +224,6 @@ export default {
             };
 
             const success = await useAuthStore().register(userData);
-
             if (success) {
                 const message = useAuthStore().getSuccess;
                 this.toast.success(message, {
